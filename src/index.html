@@ -134,16 +134,104 @@
 
     <!-- Progressive Enhancements : BEGIN -->
     <style>
-        /* What it does: Hover styles for buttons */
-        .button-td,
-        .button-a {
-            transition: all 100ms ease-in;
+        .bg-color-green {
+            background-color: #2e666d;
         }
-	    .button-td-primary:hover,
-	    .button-a-primary:hover {
-	        background: #555555 !important;
-	        border-color: #555555 !important;
-	    }
+
+        .bg-color-white {
+            background-color: white;
+        }
+
+        .bg-color-yellow {
+            background-color: #ffc700;
+        }
+
+        .border-color-yellow {
+            border: 1px solid #ffc700;
+        }
+
+        .button {
+            font-size: 12px;
+            text-decoration: none;
+            display: block;
+            border-radius: 20px;
+            border: 1px solid;
+            transition: all 150ms ease-in;
+        }
+
+        .button-yellow {
+            background-color: white;
+            color: #ffc700;
+            border-color: #ffc700;
+            padding: 4px 25px;
+        }
+
+        .button-container:hover .button-yellow {
+            background-color: #ffc700!important;
+            color: white!important;
+        }
+
+        .button-container:hover .button-green {
+            background-color: #2e666d!important;
+            color: white!important;
+        }
+
+        .button-green {
+            background-color: #2e666ded;
+            color: white;
+            border-color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .text-color-yellow {
+            color: #ffc700;
+        }
+
+        .text-color-green {
+            color: #2e666d;
+        }
+
+        .text-color-white {
+            color: white;
+        }
+
+        .no-link {
+            text-decoration: none;
+        }
+
+        .text-small {
+            font-size: 11px;
+        }
+
+        .text-font-poppings {
+
+        }
+
+        .padding-x-1 {
+            padding: 0 20px;
+        }
+
+        .h1 {
+            font-size: 24px;
+            padding: 20px 20px;
+            font-weight: bold;
+        }
+
+        .h2 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .p {
+            font-size: 12.5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+        }
+
+	  
         /* Media Queries */
         @media screen and (max-width: 600px) {
             .email-container {
@@ -188,7 +276,7 @@
 	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
 	3. mso conditional: For Windows 10 Mail
 -->
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: white;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;" class="bg-color-white">
 	<center style="width: 100%; background-color: white;">
     <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: white;">
@@ -210,183 +298,62 @@
         <!-- Preview Text Spacing Hack : END -->
 
         <!-- Email Body : BEGIN -->
+       
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;" class="email-container">
+            <tbody>
+                <tr>
+                    <td>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="bg-color-green">
+                            <tbody>
+                                <tr class="text-color-white text-small no-link">
+                                    <td style="padding:20px 0 20px 30px;" align="left"><strong>Lunes, 4 de Noviembre de 2019</strong></td>
+                                    <td style="padding:20px 30px 20px 0"  align="right"><a class="text-color-white" href="https://google.com"><strong>Ver newsletter desde el navegador</strong></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:50px 0px 0px 50px;"><img src="https://somospecesvoladores.com/assets/images/web-agencia/logo.png?v1" alt="" style="width: 140px"></td>
+                </tr>
+                <tr>
+                    <td class="h1">
+                        <span class="text-color-yellow">¡Bienvenido</span><span style="color: #2e666d"> noviembre!</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="subtitle padding-x-1">
+                        Te informamos de lo último en <strong>diseño y desarrollo digital,</strong> todo lo que necesitas saber, nosotros te lo contamos: 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;" class="email-container">
 	        <!-- Email Header : BEGIN -->
-            <tr>
-                <td style="padding: 20px 0; text-align: center">
-                    <img src="https://via.placeholder.com/200x50" width="200" height="50" alt="alt_text" border="0" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-                </td>
-            </tr>
+            
 	        <!-- Email Header : END -->
 
             <!-- Hero Image, Flush : BEGIN -->
-            <tr>
-                <td style="background-color: #ffffff;">
-                    <img src="https://via.placeholder.com/1200x600" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
-                </td>
-            </tr>
+            
             <!-- Hero Image, Flush : END -->
 
             <!-- 1 Column Text + Button : BEGIN -->
-            <tr>
-                <td style="background-color: #ffffff;">
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">Praesent laoreet malesuada&nbsp;cursus.</h1>
-                                <p style="margin: 0 0 10px;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
-                                <ul style="padding: 0; margin: 0; list-style-type: disc;">
-									<li style="margin:0 0 10px 20px;" class="list-item-first">A list item.</li>
-									<li style="margin:0 0 10px 20px;">Another list item here.</li>
-									<li style="margin: 0 0 0 20px;" class="list-item-last">Everyone gets a list item, list items for everyone!</li>
-								</ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 0 20px 20px;">
-                                <!-- Button : BEGIN -->
-                                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
-                                    <tr>
-                                        <td class="button-td button-td-primary" style="border-radius: 4px; background: white;">
-											<a class="button-a button-a-primary" href="https://google.com/" style="background: white; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Centered Primary Button</a>
-										</td>
-                                    </tr>
-                                </table>
-                                <!-- Button : END -->
-                            </td>
-                        </tr>
-
-                    </table>
-                </td>
-            </tr>
+            
             <!-- 1 Column Text + Button : END -->
 
             <!-- Background Image with Text : BEGIN -->
-            <tr>
-                <!-- Bulletproof Background Images c/o https://backgrounds.cm -->
-                <td valign="middle" style="text-align: center; background-image: url('https://via.placeholder.com/600x230/222222/666666'); background-color: white; background-position: center center !important; background-size: cover !important;">
-	                <!--[if gte mso 9]>
-	                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:175px; background-position: center center !important;">
-	                <v:fill type="tile" src="https://via.placeholder.com/600x230/222222/666666" color="white" />
-	                <v:textbox inset="0,0,0,0">
-	                <![endif]-->
-	                <div>
-	                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-	                        <tr>
-	                            <td valign="middle" style="text-align: center; padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
-	                                <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
-	                            </td>
-	                        </tr>
-	                    </table>
-	                </div>
-	                <!--[if gte mso 9]>
-	                </v:textbox>
-	                </v:rect>
-	                <![endif]-->
-	            </td>
-	        </tr>
+         
 	        <!-- Background Image with Text : END -->
 
 	        <!-- 2 Even Columns : BEGIN -->
-	        <tr>
-	            <td style="padding: 10px; background-color: #ffffff;">
-	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-	                    <tr>
-	                        <!-- Column : BEGIN -->
-	                        <th valign="top" width="50%" class="stack-column-center">
-	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-	                                <tr>
-	                                    <td style="padding: 10px; text-align: center">
-	                                        <img src="https://via.placeholder.com/270" width="270" height="" alt="alt_text" border="0" style="width: 100%; max-width: 270px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-	                                    </td>
-	                                </tr>
-	                                <tr>
-	                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-	                                        <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-	                                    </td>
-	                                </tr>
-	                            </table>
-	                        </th>
-	                        <!-- Column : END -->
-	                        <!-- Column : BEGIN -->
-	                        <th valign="top" width="50%" class="stack-column-center">
-	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-	                                <tr>
-	                                    <td style="padding: 10px; text-align: center">
-	                                        <img src="https://via.placeholder.com/270" width="270" height="" alt="alt_text" border="0" style="width: 100%; max-width: 270px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-	                                    </td>
-	                                </tr>
-	                                <tr>
-	                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-	                                        <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-	                                    </td>
-	                                </tr>
-	                            </table>
-	                        </th>
-	                        <!-- Column : END -->
-	                    </tr>
-	                </table>
-	            </td>
-	        </tr>
+	        
 	        <!-- 2 Even Columns : END -->
 
 	        <!-- 3 Even Columns : BEGIN -->
-	        <tr>
-	            <td style="padding: 10px; background-color: #ffffff;">
-	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-	                    <tr>
-	                        <!-- Column : BEGIN -->
-	                        <th valign="top" width="33.33%" class="stack-column-center">
-	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-	                                <tr>
-	                                    <td style="padding: 10px; text-align: center">
-	                                        <img src="https://via.placeholder.com/170" width="170" height="" alt="alt_text" border="0" style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-	                                    </td>
-	                                </tr>
-	                                <tr>
-	                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-	                                        <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-	                                    </td>
-	                                </tr>
-	                            </table>
-	                        </th>
-	                        <!-- Column : END -->
-	                        <!-- Column : BEGIN -->
-	                        <th valign="top" width="33.33%" class="stack-column-center">
-	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-	                                <tr>
-	                                    <td style="padding: 10px; text-align: center">
-	                                        <img src="https://via.placeholder.com/170" width="170" height="" alt="alt_text" border="0" style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-	                                    </td>
-	                                </tr>
-	                                <tr>
-	                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-	                                        <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-	                                    </td>
-	                                </tr>
-	                            </table>
-	                        </th>
-	                        <!-- Column : END -->
-	                        <!-- Column : BEGIN -->
-	                        <th valign="top" width="33.33%" class="stack-column-center">
-	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-	                                <tr>
-	                                    <td style="padding: 10px; text-align: center">
-	                                        <img src="https://via.placeholder.com/170" width="170" height="" alt="alt_text" border="0" style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-	                                    </td>
-	                                </tr>
-	                                <tr>
-	                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-	                                        <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-	                                    </td>
-	                                </tr>
-	                            </table>
-	                        </th>
-	                        <!-- Column : END -->
-	                    </tr>
-	                </table>
-	            </td>
-	        </tr>
+	       
 	        <!-- 3 Even Columns : END -->
 
 	        <!-- Thumbnail Left, Text Right : BEGIN -->
@@ -395,28 +362,32 @@
 	                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 	                    <tr>
 	                        <!-- Column : BEGIN -->
-	                        <th width="33.33%" class="stack-column-center">
+	                        <th width="50%" class="stack-column-center">
 	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 	                                <tr>
 	                                    <td dir="ltr" valign="top" style="padding: 0 10px;">
-	                                        <img src="https://via.placeholder.com/170" width="170" height="170" alt="alt_text" border="0" class="center-on-narrow" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                        <img src="https://somospecesvoladores.com/blog/wp-content/uploads/2019/11/imagen-Post-SEM-Somos-Peces-Voladores-1024x680.jpg" width="270" height="170" alt="alt_text" border="0" class="center-on-narrow" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
 	                                    </td>
 	                                </tr>
 	                            </table>
 	                        </th>
 	                        <!-- Column : END -->
 	                        <!-- Column : BEGIN -->
-	                        <th width="66.66%" class="stack-column-center">
+	                        <th width="50%" class="stack-column-center">
 	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 	                                <tr>
-	                                    <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px; text-align: left;" class="center-on-narrow">
-	                                        <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Class aptent taciti sociosqu</h2>
-	                                        <p style="margin: 0 0 10px 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+	                                    <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; line-height: 20px; padding: 10px; text-align: left;" class="center-on-narrow">
+	                                        <div class="h2 text-color-green">¿Sabes qué es el SEM? Puntos clave del Search Engine Marketing</div>
+                                            <p class="p">
+                                                Las siglas SEM son un acrónimo de "Search Engine Marketing", lo que, explicado de forma muy simplificada, 
+                                                consiste en el pago por parte del interesado para obtner tráfico y/o una mayor visivilidad en los motores de 
+                                                busqueda...
+                                            </p>
 	                                        <!-- Button : BEGIN -->
 	                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
 	                                            <tr>
-		                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: white;">
-														<a class="button-a button-a-primary" href="https://google.com/" style="background: white; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Primary Button</a>
+		                                            <td class="button-td button-td-primary button-container">
+														<a class="button button-yellow" href="https://google.com/">Primary Button</a>
 													</td>
 	                                          </tr>
 	                                      </table>
@@ -429,50 +400,13 @@
 	                    </tr>
 	                </table>
 	            </td>
-	        </tr>
+            </tr>
+            
+            
 	        <!-- Thumbnail Left, Text Right : END -->
 
 	        <!-- Thumbnail Right, Text Left : BEGIN -->
-	        <tr>
-	            <td dir="rtl" width="100%" style="padding: 10px; background-color: #ffffff;">
-	                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-	                    <tr>
-	                        <!-- Column : BEGIN -->
-	                        <th width="33.33%" class="stack-column-center">
-	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-	                                <tr>
-	                                    <td dir="ltr" valign="top" style="padding: 0 10px;">
-	                                        <img src="https://via.placeholder.com/170" width="170" height="170" alt="alt_text" border="0" class="center-on-narrow" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-	                                    </td>
-	                                </tr>
-	                            </table>
-	                        </th>
-	                        <!-- Column : END -->
-	                        <!-- Column : BEGIN -->
-	                        <th width="66.66%" class="stack-column-center">
-	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-	                                <tr>
-	                                    <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px; text-align: left;" class="center-on-narrow">
-	                                        <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Class aptent taciti sociosqu</h2>
-	                                        <p style="margin: 0 0 10px 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-	                                        <!-- Button : BEGIN -->
-	                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
-	                                            <tr>
-		                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: white;">
-														<a class="button-a button-a-primary" href="https://google.com/" style="background: white; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Primary Button</a>
-													</td>
-	                                            </tr>
-	                                        </table>
-	                                        <!-- Button : END -->
-	                                    </td>
-	                                </tr>
-	                            </table>
-	                        </th>
-	                        <!-- Column : END -->
-	                    </tr>
-	                </table>
-	            </td>
-	        </tr>
+	       
 	        <!-- Thumbnail Right, Text Left : END -->
 
 	        <!-- Clear Spacer : BEGIN -->
@@ -488,14 +422,27 @@
 	            <td style="background-color: #ffffff;">
 	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 	                    <tr>
-	                        <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-	                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.
+	                        <td align="center" style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+	                            <strong>CONTACTA NOSOTROS PARA POTENCIAR TU PROYECTO DIGITAL</strong>
 	                        </td>
 	                    </tr>
 	                </table>
 	            </td>
 	        </tr>
-	        <!-- 1 Column Text : END -->
+            <!-- 1 Column Text : END -->
+            <tr>
+                    <td style="padding: 0 20px 20px;">
+                        <!-- Button : BEGIN -->
+                        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                            <tbody><tr>
+                                <td class="button-td button-td-primary button-container">
+                                    <a class="button button-green" href="https://google.com/" >¡HABLEMOS DE RESULTADOS!</a>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        <!-- Button : END -->
+                    </td>
+                </tr>
 
 	    </table>
 	    <!-- Email Body : END -->
@@ -514,34 +461,6 @@
 	    </table>
 	    <!-- Email Footer : END -->
 
-	    <!-- Full Bleed Background Section : BEGIN -->
-	    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #709f2b;">
-	        <tr>
-	            <td>
-	                <div align="center" style="max-width: 600px; margin: auto;" class="email-container">
-	                    <!--[if mso]>
-	                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
-	                    <tr>
-	                    <td>
-	                    <![endif]-->
-	                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-	                        <tr>
-	                            <td style="padding: 20px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
-	                                <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
-	                            </td>
-	                        </tr>
-	                    </table>
-	                    <!--[if mso]>
-	                    </td>
-	                    </tr>
-	                    </table>
-	                    <![endif]-->
-	                </div>
-	            </td>
-	        </tr>
-	    </table>
-	    <!-- Full Bleed Background Section : END -->
-
     <!--[if mso | IE]>
     </td>
     </tr>
@@ -550,73 +469,3 @@
     </center>
 </body>
 </html>
-
-
-<!-- colors
-        green: #2e666d;
-        yellow: #ffc700;
-
-        sizes
-        header: 24px;
-        paragraph: 16px
-
-    --> 
-<!-------------------------------------------
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-
-    
-
-</head>
-<body style="background: #f4f4f4; margin:0; padding:0; font-family: Arial, 'sans-serif';">
-    <table width="100%" cellpadding=0 cellspacing=0>
-        <tbody>
-            <tr>
-            <td></td>
-            <td width="600" style="padding:0;">
-            <table cellpadding=0 cellspacing=0 style="width:100%;max-width:600px;margin:0 auto;border-collapse:collapse;background:#2e666d;">
-                <tbody>
-                    <tr>
-                        <td style="color: white;font-size:11px;padding:20px 0 20px 30px;" align="left"><strong>Lunes, 4 de Noviembre de 2019</strong></td>
-                        <td style="color: white;font-size:11px;padding:20px 30px 20px 0"  align="right"><a style="color: white; text-decoration: none;" href="https://google.com"><strong>Ver newsletter desde el navegador</strong></a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table cellpadding=0 cellspacing=0 style="width:100%;max-width:600px;margin:0 auto;border-collapse:collapse;background:#ffffff;">
-                <tbody>
-                    <tr>
-                        <td style="padding:50px 0px 0px 50px;"><img src="https://somospecesvoladores.com/assets/images/web-agencia/logo.png?v1" alt="" style="width: 140px"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="color:#3D3935;padding:30px 50px;line-height:1.3;font-size:32px;font-family:Arial, sans-serif;">
-                            <span style="color: #ffc700">¡Bienvenido</span><span style="color: #2e666d"> noviembre!</span>
-                        </td>
-                    </tr>
-                    <tr >
-                        <td style="padding: 0 50px;">
-                            Te informamos de lo último en <strong>diseño y desarrollo digital,</strong> todo lo que necesitas saber, nosotros te lo contamos: 
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table cellpadding=0 cellspacing=0 style="width:100%;max-width:600px;margin:0 auto;border-collapse:collapse;background:#ffffff;">
-                <tbody>
-                    <tr>
-                        <td style="width: 200px; padding-left: 50px;">
-                            <img src="https://www.kanlli.com/newsletter/2019/10-octubre/img/img-header.png" height="323" width="162" alt="header.png">
-                        </td>
-                        <td>Hello</td>
-                    </tr>
-                </tbody>
-            </table>
-
-
-
-
-
-
------------------------------------------------------------>
