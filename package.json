@@ -1,0 +1,27 @@
+{
+  "name": "email",
+  "version": "1.0.0",
+  "description": "Tool to develop emails ",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajorquera/email.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajorquera/email/issues"
+  },
+  "homepage": "https://github.com/ajorquera/email#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.7.0"
+  }
+}
