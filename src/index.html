@@ -7,6 +7,9 @@
             /* My CSS */
             @import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap');
 
+            .text-no-link {
+                text-decoration: none;
+            }
 
             .text-color-yellow {
                 color: #ffc700;
@@ -25,6 +28,40 @@
                 font-family: 'Open Sans', sans-serif;
                 font-size: 14px;
                 font-weight: normal;
+            }
+
+            p {
+                margin: 0;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 12.5px;
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+
+            .button {
+                font-size: 12px;
+                text-decoration: none;
+                display: block;
+                border-radius: 20px;
+                border: 1px solid;
+                transition: all 150ms ease-in;
+            }
+
+            .button-yellow {
+                background-color: white;
+                color: #ffc700;
+                border-color: #ffc700;
+                padding: 4px 25px;
+            }
+
+            .button-container:hover .button-yellow {
+                background-color: #ffc700!important;
+                color: white!important;
+            }
+
+            .button-container:hover .button-green {
+                background-color: #2e666d!important;
+                color: white!important;
             }
         
             /*----------------------------------------------------------------------------------------*/
@@ -122,17 +159,16 @@
 			* @style heading 3
 			*/
 			h3{
-				/*@editable*/ color:#606060 !important;
+				/*@editable*/ color:#2e666d !important;
 				display:block;
-				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:16px;
-				/*@editable*/ font-style:italic;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ line-height:100%;
+				/*@editable*/ font-family: 'Poppins', sans-serif;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:normal;
 				/*@editable*/ letter-spacing:normal;
 				margin-top:0;
 				margin-right:0;
-				margin-bottom:10px;
+				margin-bottom:15px;
 				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
@@ -222,7 +258,7 @@
 			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 			*/
 			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#EB4102;
+				/*@editable*/ color:white;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -238,9 +274,7 @@
 			* @tip Set the background color and borders for your email's column area.
 			*/
 			#templateColumns{
-				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ background-color:white;
 			}
 			/**
 			* @tab Columns
@@ -264,7 +298,7 @@
 			* @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
 			*/
 			.leftColumnContent a:link, .leftColumnContent a:visited, /* Yahoo! Mail Override */ .leftColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#EB4102;
+				/*@editable*/ color:white;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -281,7 +315,7 @@
 				padding-top:0;
 				padding-right:20px;
 				padding-bottom:20px;
-				padding-left:20px;
+				padding-left:0px;
 				/*@editable*/ text-align:left;
 			}
 			/**
@@ -290,14 +324,12 @@
 			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
 			*/
 			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#EB4102;
 				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
 			}
 			.leftColumnContent img, .rightColumnContent img{
 				display:inline;
-				height:auto;
-				max-width:260px;
+				height:190px;
+				width:100%;
 			}
 			/* ========== Footer Styles ========== */
 			/**
@@ -487,7 +519,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="70%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent" style="padding-top:20px;">
-                                                <img src="https://somospecesvoladores.com/assets/images/web-agencia/logo.png?v1" alt="" style="width: 107px; height: 56px;">
+                                                <img src="https://somospecesvoladores.com/assets/images/web-agencia/logo.png?v1" alt="" style="width: 107px;">
                                             </td>
                                         </tr>
                                         <tr>
@@ -514,43 +546,119 @@
                                 	<!-- BEGIN COLUMNS // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
                                     	<tr mc:repeatable>
-                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:40px;">
                                             	<table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                 	<tr>
                                                     	<td class="leftColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br />
-                                                            <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+	                                                        <img src="https://somospecesvoladores.com/blog/wp-content/uploads/2019/11/imagen-Post-SEM-Somos-Peces-Voladores-1024x680.jpg" style="max-width: 100%;" class="columnImage" >
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
-                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:40px;">
                                             	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="rightColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
-                                                        </td>
-                                                    </tr>
+                                                	
                                                     <tr>
                                                     	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br />
-                                                            <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            <h3>
+                                                                <div>¿Sabes que es el SEM?</div> 
+                                                                Puntos clave del Search Engine Marketing
+                                                            </h3>
+                                                            <p>
+                                                                Las siglas SEM son un acrónimo de "Search Engine Marketing", lo que, explicado de forma muy simplificada, 
+                                                                consiste en el pago por parte del interesado para obtner tráfico y/o una mayor visivilidad en los motores de 
+                                                                busqueda...
+                                                            </p> 
+
+                                                            <!-- Button -->
+                                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+                                                                <tr>
+                                                                    <td class="button-container">
+                                                                        <a class="no-link button button-yellow" href="https://google.com/"><strong>SEGUIR LEYENDO</strong></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
+                                        <tr mc:repeatable>
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:30px;">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    
+                                                    <tr>
+                                                        <td valign="top" class="rightColumnContent" mc:edit="right_column_content">
+                                                            <h3>
+                                                                <div>¿En que consiste el diseño responsive?</div> 
+                                                            </h3>
+                                                            <p>
+                                                                El diseño responsive o diseño adaptativo es una de las mejores practicas que existe para lograr una 
+                                                                excelente experience de usuario. Se trata de readaptar el diseño de una web para que pueda verse desde 
+                                                                cualquier dispositivo...
+                                                            </p> 
+
+                                                            <!-- Button -->
+                                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left; margin-top: 10px;">
+                                                                <tr>
+                                                                    <td class="button-container">
+                                                                        <a class="no-link button button-yellow" href="https://google.com/"><strong>SEGUIR LEYENDO</strong></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:30px;">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td class="leftColumnContent">
+                                                            <img src="https://somospecesvoladores.com/blog/wp-content/uploads/2019/10/%C2%BFEn-qu%C3%A9-consiste-el-dise%C3%B1o-responsive.jpg" style="max-width: 100%;" class="columnImage" >
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            </tr>
+                                            <tr mc:repeatable>
+                                                    <td align="center" valign="top" class="templateColumnContainer" style="padding-top:30px;">
+                                                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td class="leftColumnContent">
+                                                                        <img src="https://somospecesvoladores.com/blog/wp-content/uploads/2019/10/Crear-un-blog-o-una-web.jpg" style="max-width: 100%;" class="columnImage" >
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    <td align="center" valign="top" class="templateColumnContainer" style="padding-top:30px;">
+                                                        <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                            
+                                                            <tr>
+                                                                <td valign="top" class="rightColumnContent" mc:edit="right_column_content">
+                                                                    <h3>
+                                                                        <div>Crear un blog o una web:</div> 
+                                                                        <div>La importancia de contar con un buen equipo de marketing</div> 
+                                                                    </h3>
+                                                                    <p>
+                                                                        Cada vez son más los y las emprendedoras que apuestan por crear un blog o 
+                                                                        diseñar una web desde cero como un proyecto propio en el que puedan dar lo mejor de sí
+                                                                        mismo y hacer algo que de verdad les apasiona... 
+                                                                    </p> 
+        
+                                                                    <!-- Button -->
+                                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+                                                                        <tr>
+                                                                            <td class="button-container">
+                                                                                <a class="no-link button button-yellow" href="https://google.com/"><strong>SEGUIR LEYENDO</strong></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                   
+                                                </tr>
                                     </table>
                                     <!-- // END COLUMNS -->
                                 </td>
